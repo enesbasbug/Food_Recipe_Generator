@@ -47,8 +47,9 @@ if selected == "Meat":
     recp = meat.meat_meal()[1]
     st.title("Recipe:")
     st.write("__Recipe:__ ", recp)
-    st.write("Ingredients: ", ingr)
     st.write("Bon Appétit")
+    st.write("Ingredients: ", ingr)
+
 
 
 # 
@@ -60,8 +61,9 @@ if selected == "Chicken":
     recp = chicken.chicken_meal()[1]
     st.title("Recipe:")
     st.write("__Recipe:__ ", recp)
-    st.write("Ingredients: ", ingr)
     st.write("Bon Appétit")
+    st.write("Ingredients: ", ingr)
+
 
 
 #
@@ -73,5 +75,5 @@ if selected == "Fish":
     recp = fish.fish_meal()[1]
     st.title("Recipe:")
     st.write("__Recipe:__ ", recp)
-    st.write("Ingredients: ", ingr)
     st.write("Bon Appétit")
+    st.write("Ingredients: ", ingr)
