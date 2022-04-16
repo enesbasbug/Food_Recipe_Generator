@@ -33,41 +33,44 @@ selected = option_menu(
 
 
 if selected == "Main Menu":
-    st.title("Hi there!")
+    st.title("Hi there! You may simply choose what kind of dish you would like to generate")
     st.write("Bon Appétit")
-    st.write("You may go through the whole code from [__here__] (https://github.com/enesbasbug/).")
+    st.write("You may go through the whole code from [__here__] (https://github.com/enesbasbug/Food_Recipe_Generator).")
 
 #
 # MEAT
 if selected == "Meat":
+
+    st.write("It just takes some time to generate, please wait :)")
     ingr = meat.meat_meal()[0]
     recp = meat.meat_meal()[1]
-    st.write("It just takes some time to generate, please wait :)")
     st.title("Recipe:")
-    st.write("Ingredients: ", ingr)
     st.write("__Recipe:__ ", recp)
+    st.write("Ingredients: ", ingr)
     st.write("Bon Appétit")
 
 
 # 
 # CHICKEN
 if selected == "Chicken":
+
+    st.write("It just takes some time to generate, please wait :)")
     ingr = chicken.chicken_meal()[0]
     recp = chicken.chicken_meal()[1]
-    st.write("It just takes some time to generate, please wait :)")
     st.title("Recipe:")
-    st.write("Ingredients: ", ingr)
     st.write("__Recipe:__ ", recp)
+    st.write("Ingredients: ", ingr)
     st.write("Bon Appétit")
 
 
 #
 # FISH
 if selected == "Fish":
+
+    st.write("It just takes some time to generate, please wait :)")
     ingr = fish.fish_meal()[0]
     recp = fish.fish_meal()[1]
-    st.write("It just takes some time to generate, please wait :)")
     st.title("Recipe:")
-    st.write("Ingredients: ", ingr)
     st.write("__Recipe:__ ", recp)
+    st.write("Ingredients: ", ingr)
     st.write("Bon Appétit")
