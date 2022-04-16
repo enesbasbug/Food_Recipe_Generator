@@ -8,17 +8,17 @@ from keras.models import load_model
 import tensorflow as tf
 from tensorflow import keras
 import re
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM,Dense,Embedding,Dropout, Bidirectional
+from tensorflow.keras import regularizers
+from tensorflow.keras.losses import sparse_categorical_crossentropy
 #...
 def chicken_meal():
-    TEXT_chicken = open('chicken.txt', 'rb').read().decode(encoding='utf-8')
-    # TEXT_meat = open('meat.txt', 'rb').read().decode(encoding='utf-8')
-    # TEXT_fish = open('fish.txt', 'rb').read().decode(encoding='utf-8')
-    TEXT_ingredients = open('ingredients.txt', 'rb').read().decode(encoding='utf-8')
+    TEXT_chicken = open('data/chicken.txt', 'rb').read().decode(encoding='utf-8')
+
+    TEXT_ingredients = open('data/ingredients.txt', 'rb').read().decode(encoding='utf-8')
     # The length of texts is the number of characters in it
-    print(len(TEXT_chicken))
-    # print(len(TEXT_meat))
-    # print(len(TEXT_fish))
-    print(len(TEXT_ingredients))
+
 
     # The unique characters in the file
     vocab = sorted(set(TEXT_chicken))
@@ -62,16 +62,18 @@ def chicken_meal():
     # Number of RNN units
     rnn_units = 1024
     def build_model(vocab_size, embedding_dim, rnn_units, batch_size):
-        model = tf.keras.Sequential([
-            tf.keras.layers.Embedding(vocab_size, embedding_dim,
-                                    batch_input_shape=[batch_size, None]),
-            tf.keras.layers.GRU(rnn_units,
-                                return_sequences=True,
-                                stateful=True,
-                                recurrent_initializer='glorot_uniform'),
-            tf.keras.layers.Dense(vocab_size)
-        ])
+        model = Sequential()
+        model.add(Embedding(vocab_size, embedding_dim,batch_input_shape=[batch_size, None]))
+        model.add(LSTM(rnn_units,return_sequences=True,stateful=True,recurrent_initializer='glorot_uniform'))
+        model.add(Dropout(0.2))
+        model.add(LSTM(rnn_units,return_sequences=True,stateful=True,recurrent_initializer='glorot_uniform'))
+        model.add(Dropout(0.2))
+        # Final Dense Layer to Predict
+        model.add(Dense(vocab_size))
+        model.compile(optimizer='adam', loss=loss) 
+        # print(model.summary())
         return model
+
     model = build_model(
         vocab_size=len(vocab),
         embedding_dim=embedding_dim,
@@ -142,19 +144,21 @@ def chicken_meal():
 
 
     model = build_model(vocab_size, embedding_dim, rnn_units, batch_size=1)
-    model.load_weights("chicken_model.h5")
+    model.load_weights("models/chicken_model.h5")
     # model.load_weights(tf.train.latest_checkpoint(checkpoint_dir))
 
     model.build(tf.TensorShape([1, None]))
 
 
-    text_file_c = generate_text(model, start_string=u" ",t=0.1)
+    text_file_c = generate_text(model, start_string=u"chicken ",t=0.1)
 
-    def word_extraction(sentence):
+    def word_extraction(text):
         ignore = ["a", "the", "is", "to", "until","about","with","and","as","add","on","in","at","of","over","around","knife","sharp","pairing","once","comes","for","minutes","hours"]
-        words = re.sub("[^\w]", " ",  sentence).split()
+        words = re.sub("[^\w]", " ",  text).split()
         cleaned_text = [w.lower() for w in words if w not in ignore]
-        return cleaned_text
+        output_ingredients = ["".join(a) for a in cleaned_text if a in TEXT_ingredients]
+        return output_ingredients
+
 
 
     ingredients_c = word_extraction(text_file_c)
