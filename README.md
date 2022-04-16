@@ -4,7 +4,7 @@
 
 
 # Recipe generator and its visual approach using LSTM and Big Sleep
-- You may see the recipe/text generator I built above, I, then, utilized OpenAI's Big Sleep model. (https://github.com/lucidrains/big-sleep))
+- You may see the recipe/text generator I built above. Then, I utilized OpenAI's Big Sleep model. (https://github.com/lucidrains/big-sleep))
 - I also built an web app using Streamlit. 
 - I integrated Big Sleep model to Text generator locally and tried to use on my computer; however, due to my graphic card does not support CUDA, I could not utilized Big Sleep on my web app. However, the website only contains the recipe/text generator. 
 - You may can access the **web app** through here [LINK](https://share.streamlit.io/enesbasbug/food_recipe_generator/main/app.py) https://share.streamlit.io/enesbasbug/food_recipe_generator/main/app.py
