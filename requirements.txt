@@ -1,3 +1,4 @@
+click==8
 keras==2.8.0
 keras_nightly==2.5.0.dev2021032900
 matplotlib==3.4.3
