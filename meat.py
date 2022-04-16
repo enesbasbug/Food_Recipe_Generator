@@ -29,8 +29,8 @@ def meat_meal():
         model.add(Embedding(vocab_size, embedding_dim,batch_input_shape=[batch_size, None]))
         model.add(LSTM(rnn_units,return_sequences=True,stateful=True,recurrent_initializer='glorot_uniform'))
         model.add(Dropout(0.2))
-        model.add(LSTM(rnn_units,return_sequences=True,stateful=True,recurrent_initializer='glorot_uniform'))
-        model.add(Dropout(0.2))
+        # model.add(LSTM(rnn_units,return_sequences=True,stateful=True,recurrent_initializer='glorot_uniform'))
+        # model.add(Dropout(0.2))
         # Final Dense Layer to Predict
         model.add(Dense(vocab_size))
         model.compile(optimizer='adam', loss=loss) 
@@ -117,17 +117,17 @@ def meat_meal():
     # history = model.fit(dataset, epochs=EPOCHS, callbacks=[checkpoint_callback])
     # model.save("meat_model.h5")
     model = build_model(vocab_size, embedding_dim, rnn_units, batch_size=1)
-    model.load_weights("meat_model.h5")
+    model.load_weights("models/meat_model.h5")
     # model.load_weights(tf.train.latest_checkpoint(checkpoint_dir))
     model.build(tf.TensorShape([1, None]))
     text_file_m = generate_text(model, start_string=u"meat ",t=0.1)
     # text_file_m
-    def word_extraction(sentence):
+    def word_extraction(text):
         ignore = ["a", "the", "is", "to", "until","about","with","and","as","add","on","in","at","of","over","around","knife","sharp","pairing","once","comes","for","minutes","hours"]
-        words = re.sub("[^\w]", " ",  sentence).split()
+        words = re.sub("[^\w]", " ",  text).split()
         cleaned_text = [w.lower() for w in words if w not in ignore]
-        return cleaned_text
-
+        output_ingredients = ["".join(a) for a in cleaned_text if a in TEXT_ingredients]
+        return output_ingredients
 
     ingredients_m = word_extraction(text_file_m)
     output = ingredients_m, text_file_m

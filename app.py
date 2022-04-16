@@ -34,7 +34,7 @@ selected = option_menu(
 
 if selected == "Main Menu":
     st.title("Hi there!")
-    st.write("Hope, you are going to hardly believe your eyes when you read the recipe the generator prepared ONLY for you!")
+    st.write("Bon Appétit")
     st.write("You may go through the whole code from [__here__] (https://github.com/enesbasbug/).")
 
 #
@@ -44,7 +44,7 @@ if selected == "Meat":
     recp = meat.meat_meal()[1]
     st.title("Recipe:")
     st.write("Ingredients: ", ingr)
-    st.write("__Recipe:__ ",)
+    st.write("__Recipe:__ ", recp)
 
 
 # 
