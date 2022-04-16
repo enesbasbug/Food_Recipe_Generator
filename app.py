@@ -42,7 +42,7 @@ if selected == "Main Menu":
 # MEAT
 if selected == "Meat":
 
-    st.write("It just takes some time to generate, please wait :)")
+    st.write("It just takes some time, please wait :)")
     ingr = meat.meat_meal()[0]
     recp = meat.meat_meal()[1]
     st.title("Recipe:")
@@ -55,7 +55,7 @@ if selected == "Meat":
 # CHICKEN
 if selected == "Chicken":
 
-    st.write("It just takes some time to generate, please wait :)")
+    st.write("It just takes some time, please wait :)")
     ingr = chicken.chicken_meal()[0]
     recp = chicken.chicken_meal()[1]
     st.title("Recipe:")
@@ -68,7 +68,7 @@ if selected == "Chicken":
 # FISH
 if selected == "Fish":
 
-    st.write("It just takes some time to generate, please wait :)")
+    st.write("It just takes some time, please wait :)")
     ingr = fish.fish_meal()[0]
     recp = fish.fish_meal()[1]
     st.title("Recipe:")
