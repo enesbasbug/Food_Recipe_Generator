@@ -5,9 +5,9 @@
 
 # Recipe generator and its visual approach using LSTM and Big Sleep
 
-![Alt Text](more_samples/fish.gif)
+![Alt Text](more_samples/fish.gif | width=50)
 <!-- ![Alt Text](more_samples/fish.gif) -->
-![Alt Text](more_samples/meat.gif)
+![Alt Text](more_samples/meat.gif | width=100)
 
 - You may see the recipe/text generator I built above. Then, I utilized OpenAI's Big Sleep model. (https://github.com/lucidrains/big-sleep))
 - I also built an web app using Streamlit. 
