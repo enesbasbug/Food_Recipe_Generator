@@ -6,9 +6,9 @@
 # Recipe generator and its visual approach using LSTM and Big Sleep
 
 <p float="left">
-  <img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/fish.gif" width="250">
-  <img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/meat.gif" width="250">
-  <img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/chicken.gif" width="250">
+  <img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/fish.gif" width="270">
+  <img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/meat.gif" width="270">
+  <img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/chicken.gif" width="270">
 
 </p>
 
