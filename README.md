@@ -21,8 +21,8 @@
 - **Sample 01** (You will see below first the recipe and its image output after first and last epoch)
 - fish sauce and garnish with fried red shallots, peanuts and chilli., combine the fish sauce, rice vinegar, sugar and 12 cup of water in a saucepan and place over medium heat. stir well and cook until the garlic is tender. add saffron broth and bring to a boil. add the rest of the center of the plate. add tomatoes and cook over very low heat until wilted, about 10 minutes., set halibut over the vegetables, season with salt and pepper. place fish in oval casserole dish. melt 4 ounces butter in small saucepan. add remaining ingredients and simmer about three minutes. spoon sauce over fish. garnish with orange slices and minced parsley., preheat oven to 400 degrees. cut the tomatoes in half, crosswise. with your index finger poke out the seeds from the cavities. sprinkle the halves lightly with salt and put the tomato upside down on a rack to drain for 20 minutes or more. blend all of the remaining ingredients in a small bowl and mix well.pour vegetable oil into a medium saucepan until 1 cups o
 
-<img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/sample01/first.png" width="300">
-<img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/sample01/last.png" width="300">
+<img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/sample01/first.png" width="300">
+<img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/sample01/last.png" width="300">
 
 
 - **Sample 02** (You will see below first the recipe and its image output after first and last epoch)
