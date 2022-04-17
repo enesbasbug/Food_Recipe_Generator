@@ -5,10 +5,14 @@
 
 # Recipe generator and its visual approach using LSTM and Big Sleep
 
-<img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/fish.gif" width="300">
+<p float="left">
+  <img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/fish.gif" width="300">
+  <img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/meat.gif" width="300">
+</p>
+
+
 
 <!-- ![Alt Text](more_samples/fish.gif) -->
-<img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/meat.gif" width="300">
 
 - You may see the recipe/text generator I built above. Then, I utilized OpenAI's Big Sleep model. (https://github.com/lucidrains/big-sleep))
 - I also built an web app using Streamlit. 
@@ -45,16 +49,17 @@
 - chicken on the grill., cook the chicken until well browned on both sides and firm, but not hard to the saucepan and stir well. add the chicken broth, onions, carrots, garlic, and salt. cook, stirring occasionally, until soft, about 3 minutes., add the flour and stir about 2 minutes., add the chicken broth, onions and cauliflower and set aside., add olive oil to large paella pan and heat over a medium fire. then, add onions and garlic saute on mediumlow for about 3 to 4 minutes, until soft. add the wine and 1 cup chicken stock. preheat oven to 350., grease a 9 x 13 inch baking dish with cooking spray., season the chicken with salt and pepper., place the flour in a shallow bowl and cover with pickle juice evenly over the artichokes, scatter the toasted pine nuts over the top, and serve.trim artichokes in a large blender.wash and drain the peas in a colander., in a small skillet, saute onions and garlic on low until soft, about 2 minutes. add chicken, salt, cilantro, cumin, oregano, chili powder,
 
 
-![Screenshot](more_samples/sample04/first_1.png)
-![Screenshot](more_samples/sample04/last_100.png)
+<!-- ![Screenshot](more_samples/sample04/first_1.png)
+![Screenshot](more_samples/sample04/last_100.png) -->
 <img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/sample04/first_1.png" width="300">
 <img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/sample04/last_100.png" width="300">
+
 
 
 - **Sample 05** (You will see below first the recipe and its image output after first and last epoch)
 - chicken on top, about 10 minutes., cook the bacon in a large pot over low heat until all of the chicken is cooked through, about 12 minutes.preheat the oven to 350 degrees f., in a large skillet, melt butter over mediumlow heat and add chicken. cook on both sides, until browned on all sides, about 6 minutes. stir in apple and cook, stirring occasionally until soft, 8 to 10 minutes. add the apples and cook until slightly dry, about 2 minutes. stir in the marinade and refrigerate for 68 hours., remove the chicken, shred or cut the meat, discard the bones and return the chicken to the pan. stir to combine. cover and cook on high until heated through, about 2 minutes., mix in the soup with a fork, leaving the squash in half lengthwise. rinse them, fanning out the chicken breasts lengthwise to combine., season chicken lightly with salt and pepper., when the wok is very hot, add half of the oil, then add the asparagus and cook until tendercrisp, about 6 to 7 minutes., add the zucchini, season with r
 
-![Screenshot](more_samples/sample05/first.png)
-![Screenshot](more_samples/sample05/last.png)
+<!-- ![Screenshot](more_samples/sample05/first.png)
+![Screenshot](more_samples/sample05/last.png) -->
 <img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/sample05/first.png" width="300">
 <img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/sample05/last.png" width="300">
