@@ -48,7 +48,7 @@ if selected == "Meat":
     st.title("Recipe:")
     st.write("__Recipe:__ ", recp)
     st.write("Bon Appétit")
-    st.write("For another recipe, please refresh the page.")
+    st.write("For another meat recipe, please refresh the page.")
     st.write("Ingredients: ", ingr)
     
 
@@ -64,7 +64,7 @@ if selected == "Chicken":
     st.title("Recipe:")
     st.write("__Recipe:__ ", recp)
     st.write("Bon Appétit")
-    st.write("For another recipe, please refresh the page.")
+    st.write("For another chicken recipe, please refresh the page.")
     st.write("Ingredients: ", ingr)
 
 
@@ -79,5 +79,5 @@ if selected == "Fish":
     st.title("Recipe:")
     st.write("__Recipe:__ ", recp)
     st.write("Bon Appétit")
-    st.write("For another recipe, please refresh the page.")
+    st.write("For another fish recipe, please refresh the page.")
     st.write("Ingredients: ", ingr)
