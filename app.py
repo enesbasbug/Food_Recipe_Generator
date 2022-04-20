@@ -45,7 +45,7 @@ if selected == "Meat 🥩":
     st.write("It just takes some time, please wait :) (around 30 secs)")
     ingr = meat.meat_meal()[0]
     recp = meat.meat_meal()[1]
-    st.title("Recipe:")
+    st.title("🥕🥩 Recipe: 🥬🥔")
     st.write("__Recipe:__ ", recp)
     st.write("Bon Appétit 🥬🥔🐟🥩🦞🥕🐔🍗")
     st.write("For another meat 🥩 recipe, please refresh the page.")
@@ -61,7 +61,7 @@ if selected == "Chicken 🐔":
     st.write("It just takes some time, please wait :) (around 30 secs)")
     ingr = chicken.chicken_meal()[0]
     recp = chicken.chicken_meal()[1]
-    st.title("Recipe:")
+    st.title("🥕🐔 Recipe: 🥬🥔")
     st.write("__Recipe:__ ", recp)
     st.write("Bon Appétit 🥬🥔🐟🥩🦞🥕🐔🍗")
     st.write("For another chicken 🐔 recipe, please refresh the page.")
@@ -76,7 +76,7 @@ if selected == "Fish 🐟":
     st.write("It just takes some time, please wait :) (around 30 secs)")
     ingr = fish.fish_meal()[0]
     recp = fish.fish_meal()[1]
-    st.title("Recipe:")
+    st.title("🥕🐟 Recipe: 🥬🥔")
     st.write("__Recipe:__ ", recp)
     st.write("Bon Appétit 🥬🥔🐟🥩🦞🥕🐔🍗")
     st.write("For another fish 🐟 recipe, please refresh the page.")
