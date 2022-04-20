@@ -3,7 +3,7 @@
 
 
 
-# Recipe generator and its visual approach using LSTM and Big Sleep
+# Recipe generation and image generation from the generated recipes using LSTM and Big Sleep
 
 <p float="left">
   <img src="https://github.com/enesbasbug/Food_Recipe_Generator/blob/main/more_samples/fish.gif" width="270">
