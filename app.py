@@ -24,8 +24,8 @@ from tensorflow.keras.losses import sparse_categorical_crossentropy
 st.set_page_config(page_title="Recipe Generator", page_icon=":tada:")
 
 selected = option_menu(
-    menu_title = "ECS7022P Computational Creativity - Recipe Generator",
-    options = ["Main Menu", "Meat", "Chicken", "Fish"],
+    menu_title = "ECS7022P Computational Creativity - 🦞🥕🐔🍗  Recipe Generator 🥬🥔🐟🥩",   
+    options = ["Main Menu", "Meat 🥩", "Chicken 🐔", "Fish 🐟"],
     icons= ["book","book","book"],
     orientation = "horizontal",
     default_index=0
@@ -35,7 +35,7 @@ selected = option_menu(
 if selected == "Main Menu":
     st.title("Hi there!")
     st.write("You may simply choose above what kind of dish you would like to eat.")
-    st.write("Bon Appétit")
+    st.write("Bon Appétit 🥬🥔🐟🥩🦞🥕🐔🍗")
     st.write("You may go through the whole code from [__here__] (https://github.com/enesbasbug/Food_Recipe_Generator).")
 
 #
@@ -47,8 +47,8 @@ if selected == "Meat":
     recp = meat.meat_meal()[1]
     st.title("Recipe:")
     st.write("__Recipe:__ ", recp)
-    st.write("Bon Appétit")
-    st.write("For another meat recipe, please refresh the page.")
+    st.write("Bon Appétit 🥬🥔🐟🥩🦞🥕🐔🍗")
+    st.write("For another meat 🥩 recipe, please refresh the page.")
     st.write("Ingredients: ", ingr)
     
 
@@ -63,8 +63,8 @@ if selected == "Chicken":
     recp = chicken.chicken_meal()[1]
     st.title("Recipe:")
     st.write("__Recipe:__ ", recp)
-    st.write("Bon Appétit")
-    st.write("For another chicken recipe, please refresh the page.")
+    st.write("Bon Appétit 🥬🥔🐟🥩🦞🥕🐔🍗")
+    st.write("For another chicken 🐔 recipe, please refresh the page.")
     st.write("Ingredients: ", ingr)
 
 
@@ -78,6 +78,6 @@ if selected == "Fish":
     recp = fish.fish_meal()[1]
     st.title("Recipe:")
     st.write("__Recipe:__ ", recp)
-    st.write("Bon Appétit")
-    st.write("For another fish recipe, please refresh the page.")
+    st.write("Bon Appétit 🥬🥔🐟🥩🦞🥕🐔🍗")
+    st.write("For another fish 🐟 recipe, please refresh the page.")
     st.write("Ingredients: ", ingr)

@@ -111,7 +111,6 @@ def chicken_meal():
     vocab_size = len(vocab)
 
     model = build_model(vocab_size=len(vocab), embedding_dim=embedding_dim, rnn_units=rnn_units, batch_size=BATCH_SIZE)
-        
 
     # history = model.fit(dataset, epochs=EPOCHS, callbacks=[checkpoint_callback])
     # model.save("chicken_model.h5")

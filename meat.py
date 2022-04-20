@@ -112,8 +112,6 @@ def meat_meal():
     vocab_size = len(vocab)
 
     model = build_model(vocab_size=len(vocab), embedding_dim=embedding_dim, rnn_units=rnn_units, batch_size=BATCH_SIZE)
-        
-
     # history = model.fit(dataset, epochs=EPOCHS, callbacks=[checkpoint_callback])
     # model.save("meat_model.h5")
     model = build_model(vocab_size, embedding_dim, rnn_units, batch_size=1)
