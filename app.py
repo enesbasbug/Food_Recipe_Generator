@@ -32,8 +32,8 @@ selected = option_menu(
 )
 
 
-if selected == "Main Menu":
-    st.title("Hi there!")
+if selected == "Main Menu ":
+    st.title("🥬🥔🐟🥩 Hi there! 🦞🥕🐔🍗")
     st.write("You may simply choose above what kind of dish you would like to eat.")
     st.write("Bon Appétit 🥬🥔🐟🥩🦞🥕🐔🍗")
     st.write("You may go through the whole code from [__here__] (https://github.com/enesbasbug/Food_Recipe_Generator).")
