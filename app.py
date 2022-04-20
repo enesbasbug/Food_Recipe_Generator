@@ -24,7 +24,7 @@ from tensorflow.keras.losses import sparse_categorical_crossentropy
 st.set_page_config(page_title="Recipe Generator", page_icon=":tada:")
 
 selected = option_menu(
-    menu_title = "ECS7022P Computational Creativity - 🦞🥕🐔🍗  Recipe Generator 🥬🥔🐟🥩",   
+    menu_title = "ECS7022P Computational Creativity -                                 🦞🥕🐔🍗  Recipe Generator 🥬🥔🐟🥩",   
     options = ["Main Menu", "Meat 🥩", "Chicken 🐔", "Fish 🐟"],
     icons= ["book","book","book"],
     orientation = "horizontal",
