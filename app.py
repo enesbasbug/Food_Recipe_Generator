@@ -40,7 +40,7 @@ if selected == "Main Menu":
 
 #
 # MEAT
-if selected == "Meat":
+if selected == "Meat 🥩":
 
     st.write("It just takes some time, please wait :) (around 30 secs)")
     ingr = meat.meat_meal()[0]
@@ -56,7 +56,7 @@ if selected == "Meat":
 
 # 
 # CHICKEN
-if selected == "Chicken":
+if selected == "Chicken 🐔":
 
     st.write("It just takes some time, please wait :) (around 30 secs)")
     ingr = chicken.chicken_meal()[0]
@@ -71,7 +71,7 @@ if selected == "Chicken":
 
 #
 # FISH
-if selected == "Fish":
+if selected == "Fish 🐟":
 
     st.write("It just takes some time, please wait :) (around 30 secs)")
     ingr = fish.fish_meal()[0]
